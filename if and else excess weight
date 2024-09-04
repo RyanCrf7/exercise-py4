@@ -1,0 +1,10 @@
+total_weight=float(input("Enter the total weight of the fish in kg:"))
+weight_limit= float(input("Enter the allowed weight limit in kg:"))
+excess= total_weight - weight_limit
+cost_per_kg= 4.0
+if excess > 50: 
+    cost= excess * cost_per_kg
+    print(f'The excess weight is: {excess:.2f} kg')
+    print(f'The total cost for the excess weight is: R${cost:.2f}')
+else:
+    print(f'there is no excess weight.')
